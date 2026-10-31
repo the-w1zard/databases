@@ -1,0 +1,109 @@
+{
+  "label": "SNIPPETS",
+  "type": "folder",
+  "expanded": false,
+  "global": true,
+  "icon": "symbol-snippet",
+  "items": [
+    {
+      "label": "loader_for_redirecting_bad_requests",
+      "type": "snippet",
+      "prefix": "loader_for_redirecting_bad_requests",
+      "description": "Custom snippet from loader-for-redirecting-bad-requiests.snippet.tsx",
+      "scope": "typescript,typescriptreact",
+      "body": [
+        "export async function loader() {  return json({ error: \"GET not allowed\" }, { status: 405 })}"
+      ]
+    },
+    {
+      "label": "action_for_redirecting_bad_requests",
+      "type": "snippet",
+      "global": false,
+      "id": "project-1744496862041-y866zpqtd9",
+      "prefix": "action_for_redirecting_bad_requests",
+      "description": "Custom snippet from action-for-redirecting-bad-requests.snippet.tsx",
+      "scope": "typescript,typescriptreact",
+      "body": [
+        "export async function action() {  return json({ error: \"POST not allowed\" }, { status: 405 })}"
+      ]
+    },
+    {
+      "label": "Remix",
+      "type": "folder",
+      "expanded": false,
+      "global": true,
+      "icon": "symbol-snippet",
+      "items": [
+        // inherits global value
+        {
+          "label": "submodules_cmds",
+          "type": "snippet",
+          "prefix": "submodules_cmds",
+          "description": "Custom snippet from submodules-cmds.snippet.tsx",
+          "scope": "typescript,typescriptreact",
+          "body": [
+            "cd apps/*",
+            "git init",
+            "git remote add origin https://github.com/8an3/crm-prod.git",
+            "git branch -m master main",
+            "git add .",
+            "git commit -m \"Initial commit for dev\"",
+            "git push -u origin main",
+            "Link Submodules Properly in the Main Repo",
+            "cd apps/*",
+            "git submodule init",
+            "git submodule update --remote --recursive",
+            "Push .gitmodules and the Updated Main Repo",
+            "cd F:/OpinionatedCRM",
+            "git add .gitmodules apps/*",
+            "git commit -m \"Added submodules for dev, cal, pdf, prod\"",
+            "git push origin main",
+            "Cloning the Monorepo with Submodules (for future use)",
+            "git clone --recurse-submodules https://github.com/8an3/crm.git"
+          ]
+        },
+        {
+          "label": "toggle_prev_state",
+          "type": "snippet",
+          "prefix": "toggle_prev_state",
+          "description": "Custom snippet from toggle-prev-state.snippet.tsx",
+          "scope": "typescript,typescriptreact",
+          "body": [
+            "(prev) => !prev"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "DevStack",
+      "type": "folder",
+      "expanded": false,
+      "global": false,
+      "icon": "symbol-snippet",
+      "id": "project-1744496862041-y866zpqtd9",
+      "items": [
+        // inherits global value
+          {
+          "label": "toggle_prev_state",
+          "type": "snippet",
+          "prefix": "toggle_prev_state",
+          "description": "Custom snippet from toggle-prev-state.snippet.tsx",
+          "scope": "typescript,typescriptreact",
+          "body": [
+            "(prev) => !prev"
+          ]
+        },
+         {
+          "label": "toggle_prev_state",
+          "type": "snippet",
+          "prefix": "toggle_prev_state",
+          "description": "Custom snippet from toggle-prev-state.snippet.tsx",
+          "scope": "typescript,typescriptreact",
+          "body": [
+            "(prev) => !prev"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Contents</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-dark">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:false,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<div align="left" style="position: relative;">
+<img src="file:///f:\the_wizard_mods\packages\databases\icons\gandalf.png" align="right" width="30%" style="margin: -20px 0 0 20px;">
+<h1>Databases: <span style="font-size:18px;" >The Wizard's Arsenal</span></h1>
+<p align="left"><em>The most opinionated platform... ever.</em></p>
+<p align="left"><em>Trust me... I'm a fucking wizard... 🧙</em></p>
+<p align="left">VSCode ext:</p>
+<p align="left">
+<img src="https://img.shields.io/badge/THEMES- 251-95ED27?style=flat">
+<img src="https://img.shields.io/badge/SIDEBARS- 160+-95ED27?style=flat">
+<img src="https://img.shields.io/badge/PRODUCT ICONS- 651-95ED27?style=flat">
+<img src="https://img.shields.io/badge/FILE ICONS- 454-95ED27?style=flat">
+<img src="https://img.shields.io/badge/VSCode Extentions- 82+-95ED27?style=flat">
+<img src="https://img.shields.io/badge/FEATURES- SHIT TONNE-95ED27?style=flat">
+</p>
+<p align="left">Small but powerful repos worth checking out:</p>
+<p align="left">
+<p><a href="https://github.com/the-w1zard/app_store"><img src="https://img.shields.io/badge/Store / Maelstrom-000000.svg?style=flat&logo=JetBrains&logoColor=white" alt="JetBrains"></a>
+<a href="https://github.com/the-w1zard/dx"><img src="https://img.shields.io/badge/UX /DX-34A853.svg?style=flat&logo=Android&logoColor=white" alt="Android"></a>
+<a href="https://github.com/the-w1zard/temporal_shift"><img src="https://img.shields.io/badge/Temporal Shift-77AA99.svg?style=flat&logo=Org&logoColor=white" alt="Org"></a>
+<a href="https://github.com/the-w1zard/the_cloud"><img src="https://img.shields.io/badge/The Cloud-02303A.svg?style=flat&logo=Gradle&logoColor=white" alt="Gradle"></a>
+<a href="https://github.com/the-w1zard/signals"><img src="https://img.shields.io/badge/Signals-02303A.svg?style=flat&logo=Gradle&logoColor=white" alt="Gradle"></a>
+<img src="https://img.shields.io/badge/Sometimes, my genius... It generates gravity.-4285F4.svg?style=flat&logo=🧙&logoColor=white" alt="Google">
+<a href="https://github.com/the-w1zard"><img src="https://img.shields.io/badge/Coming Soon: The Wizard Platform-7F52FF.svg?style=flat&logo=Kotlin&logoColor=white" alt="Kotlin"></a>
+<a href="https://github.com/the-w1zard"><img src="https://img.shields.io/badge/Coming Soon: Hadron Particle Disruptor-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white" alt="java"></a></p>
+</p>
+<p align="left">The goal? To remove all friction, from everything.</p>
+</div>
+<br clear="right">
+<hr>
+<span  style="font-family: monospace"> 
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>TLDR</p><p></p>
+<p>A collection of databases, all of which are small but powerful representations on each of the areas that they were made for. Essentially, turning the old, the boring and warn out browser data stores and breathing life back into them.</p>
+<p>A must have whenever you have a need for one of them since their utlility is on point.</p>
+</div>
+</span>
+<p>A browser-focused TypeScript module providing several storage adapters, reactive scoped state, isolated registries, and lightweight ID generation.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#storage-adapters">Storage adapters</a></li>
+<li><a href="#common-adapter-api">Common adapter API</a></li>
+<li><a href="#choosing-an-adapter">Choosing an adapter</a></li>
+<li><a href="#scoped-state">Scoped state</a></li>
+<li><a href="#registries">Registries</a></li>
+<li><a href="#ids">IDs</a></li>
+<li><a href="#browser-and-runtime-notes">Browser and runtime notes</a></li>
+<li><a href="#important-implementation-notes">Important implementation notes</a></li>
+</ul>
+<p>The module exports ready-to-use instances and their classes:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">import</span> {
+  cache,
+  cookie,
+  gt,
+  indexed_db,
+  ls,
+  session,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./storage.js&quot;</span>;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Instance</th>
+<th>Class</th>
+<th>Backing store</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cache</code></td>
+<td><code>CACHE</code></td>
+<td>In-memory map</td>
+<td>Temporary, fast browser-session data</td>
+</tr>
+<tr>
+<td><code>cookie</code></td>
+<td><code>COOKIE</code></td>
+<td>Browser cookies</td>
+<td>Small values that need to accompany requests</td>
+</tr>
+<tr>
+<td><code>gt</code></td>
+<td><code>GT</code></td>
+<td>Properties on <code>globalThis</code></td>
+<td>Runtime-global values</td>
+</tr>
+<tr>
+<td><code>indexed_db</code></td>
+<td><code>INDEXED_DB</code></td>
+<td>IndexedDB</td>
+<td>Larger or structured persistent browser data</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td><code>LS</code></td>
+<td><code>localStorage</code></td>
+<td>Data that should persist across browser restarts</td>
+</tr>
+<tr>
+<td><code>session</code></td>
+<td><code>SESSION</code></td>
+<td><code>sessionStorage</code></td>
+<td>Data scoped to the current browser tab/session</td>
+</tr>
+</tbody>
+</table>
+<p>Most adapters expose <code>get</code>, <code>getMany</code>, <code>set</code>, <code>setMany</code>, <code>update</code>, <code>delete</code>, <code>deleteMany</code>, <code>has</code>, <code>subscribe</code>, <code>waitFor</code>, and <code>clear</code>. Exact behavior and available methods vary by adapter.</p>
+<h3 id="basic-usage">Basic usage</h3>
+<pre><code class="language-ts"><span class="hljs-keyword">await</span> cache.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;theme&quot;</span>, <span class="hljs-string">&quot;dark&quot;</span>);
+<span class="hljs-keyword">const</span> theme = cache.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;theme&quot;</span>);
+
+<span class="hljs-keyword">await</span> ls.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;profile&quot;</span>, { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Ada&quot;</span> });
+<span class="hljs-keyword">const</span> profile = ls.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;profile&quot;</span>);
+
+<span class="hljs-keyword">await</span> session.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;wizard-step&quot;</span>, <span class="hljs-number">2</span>);
+<span class="hljs-keyword">const</span> step = session.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;wizard-step&quot;</span>);
+</code></pre>
+<p>Some methods are declared <code>async</code>, so awaiting writes is recommended, even when the underlying operation is synchronous.</p>
+<h3 id="observe-changes">Observe changes</h3>
+<pre><code class="language-ts"><span class="hljs-keyword">const</span> unsubscribe = cache.<span class="hljs-property">subscribe</span>&lt;{ <span class="hljs-attr">connected</span>: <span class="hljs-built_in">boolean</span> }&gt;(
+  <span class="hljs-string">&quot;connection&quot;</span>,
+  <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;Connection state:&quot;</span>, value);
+  },
+);
+
+<span class="hljs-keyword">await</span> cache.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;connection&quot;</span>, { <span class="hljs-attr">connected</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-comment">// Later:</span>
+<span class="hljs-title function_">unsubscribe</span>();
+</code></pre>
+<p>When subscribing, the adapters generally call the callback immediately if a current value is available. Updates made through the adapter also notify subscribers.</p>
+<p>Wait for a value to be set:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">const</span> token = <span class="hljs-keyword">await</span> session.<span class="hljs-property">waitFor</span>&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-string">&quot;auth-token&quot;</span>);
+</code></pre>
+<p><code>SESSION.waitFor()</code> defaults to a 30-second timeout. The other adapters shown here do not set a timeout.</p>
+<h3 id="batch-operations">Batch operations</h3>
+<pre><code class="language-ts"><span class="hljs-keyword">await</span> cache.<span class="hljs-title function_">setMany</span>({
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">&quot;dark&quot;</span>,
+  <span class="hljs-attr">compactMode</span>: <span class="hljs-literal">true</span>,
+});
+
+<span class="hljs-keyword">const</span> values = <span class="hljs-keyword">await</span> cache.<span class="hljs-title function_">getMany</span>([<span class="hljs-string">&quot;theme&quot;</span>, <span class="hljs-string">&quot;compactMode&quot;</span>]);
+<span class="hljs-keyword">await</span> cache.<span class="hljs-title function_">deleteMany</span>([<span class="hljs-string">&quot;theme&quot;</span>, <span class="hljs-string">&quot;compactMode&quot;</span>]);
+</code></pre>
+<p><code>getMany()</code> returns an object keyed by the requested storage keys. Specific behavior for missing keys differs between adapters.</p>
+<h2 id="common-adapter-api">Common adapter API</h2>
+<table>
+<thead>
+<tr>
+<th>Need</th>
+<th>API</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read a value</td>
+<td><code>get(key)</code></td>
+<td><code>cache.get(&quot;theme&quot;)</code></td>
+</tr>
+<tr>
+<td>Read several values</td>
+<td><code>getMany(keys)</code></td>
+<td><code>await ls.getMany([&quot;theme&quot;, &quot;profile&quot;])</code></td>
+</tr>
+<tr>
+<td>Write a value</td>
+<td><code>set(key, value)</code></td>
+<td><code>await session.set(&quot;step&quot;, 2)</code></td>
+</tr>
+<tr>
+<td>Write several values</td>
+<td><code>setMany(entries)</code></td>
+<td><code>await cache.setMany({ a: 1, b: 2 })</code></td>
+</tr>
+<tr>
+<td>Replace an existing value only</td>
+<td><code>update(key, value)</code></td>
+<td><code>await indexed_db.update(&quot;profile&quot;, profile)</code></td>
+</tr>
+<tr>
+<td>Check whether a key exists</td>
+<td><code>has(key)</code></td>
+<td><code>await indexed_db.has(&quot;profile&quot;)</code></td>
+</tr>
+<tr>
+<td>Remove a value</td>
+<td><code>delete(key)</code></td>
+<td><code>await cookie.delete(&quot;session-id&quot;)</code></td>
+</tr>
+<tr>
+<td>Remove several values</td>
+<td><code>deleteMany(keys)</code></td>
+<td><code>await ls.deleteMany([&quot;a&quot;, &quot;b&quot;])</code></td>
+</tr>
+<tr>
+<td>Watch changes</td>
+<td><code>subscribe(key, callback)</code></td>
+<td><code>cache.subscribe(&quot;theme&quot;, onTheme)</code></td>
+</tr>
+<tr>
+<td>Wait for the next available value</td>
+<td><code>waitFor(key)</code></td>
+<td><code>await session.waitFor(&quot;token&quot;)</code></td>
+</tr>
+<tr>
+<td>Clear adapter data</td>
+<td><code>clear()</code></td>
+<td><code>await indexed_db.clear()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="choosing-an-adapter">Choosing an adapter</h2>
+<ul>
+<li>Use <strong><code>cache</code></strong> for temporary data that only needs to live in the current page’s memory.</li>
+<li>Use <strong><code>session</code></strong> for tab-scoped data that should survive reloads within the session.</li>
+<li>Use <strong><code>ls</code></strong> for small browser data that should persist across restarts.</li>
+<li>Use <strong><code>cookie</code></strong> when cookie-specific options or request behavior are required.</li>
+<li>Use <strong><code>indexed_db</code></strong> for larger or more structured persistent browser data.</li>
+<li>Use <strong><code>gt</code></strong> for values shared through the current JavaScript global object—not as durable storage.</li>
+</ul>
+<h2 id="adapter-specific-details">Adapter-specific details</h2>
+<h3 id="cache"><code>cache</code></h3>
+<p><code>CACHE</code> stores serialized values in an in-memory map. It does not persist across page reloads.</p>
+<pre><code class="language-ts"><span class="hljs-keyword">await</span> cache.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;draft&quot;</span>, { <span class="hljs-attr">text</span>: <span class="hljs-string">&quot;Unsaved&quot;</span> });
+<span class="hljs-keyword">const</span> draft = cache.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;draft&quot;</span>);
+</code></pre>
+<p><code>CACHE.ser()</code> and <code>CACHE.deser()</code> support <code>Map</code> and <code>Set</code> serialization. The adapter does not expose a public TTL configuration method in the provided implementation; <code>ttl_active</code> is initially <code>false</code>.</p>
+<h3 id="cookie"><code>cookie</code></h3>
+<p>Cookie values are serialized and written through <code>document.cookie</code>. <code>set()</code> accepts cookie options:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">await</span> cookie.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;preferences&quot;</span>, { <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;blue&quot;</span> }, {
+  <span class="hljs-attr">maxAge</span>: <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span> * <span class="hljs-number">7</span>,
+  <span class="hljs-attr">path</span>: <span class="hljs-string">&quot;/&quot;</span>,
+  <span class="hljs-attr">sameSite</span>: <span class="hljs-string">&quot;lax&quot;</span>,
+  <span class="hljs-attr">secure</span>: <span class="hljs-literal">true</span>,
+});
+</code></pre>
+<p>Supported options in the implementation are <code>maxAge</code>, <code>path</code>, <code>domain</code>, <code>secure</code>, <code>httpOnly</code>, and <code>sameSite</code>.</p>
+<p><strong>Browser limitation:</strong> JavaScript cannot create an <code>HttpOnly</code> cookie through <code>document.cookie</code>. Although <code>httpOnly</code> is accepted in the options type, setting it this way does not make a cookie HttpOnly. Set HttpOnly cookies from a server response instead.</p>
+<h3 id="gt"><code>gt</code></h3>
+<p><code>GT</code> reads and writes properties on <code>globalThis</code>:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">await</span> gt.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;appConfig&quot;</span>, { <span class="hljs-attr">debug</span>: <span class="hljs-literal">true</span> });
+<span class="hljs-keyword">const</span> config = gt.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;appConfig&quot;</span>);
+</code></pre>
+<p>These values are runtime globals, not durable storage. Use unique labels to avoid collisions with other code.</p>
+<h3 id="indexed_db"><code>indexed_db</code></h3>
+<p><code>INDEXED_DB</code> uses an object store in IndexedDB. Its constructor accepts object-store and database names:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">const</span> db = <span class="hljs-keyword">new</span> <span class="hljs-title function_">INDEXED_DB</span>(
+  <span class="hljs-string">&quot;_DB_STORE_NAME_LAYER_&quot;</span>, <span class="hljs-comment">// object store name</span>
+  <span class="hljs-string">&quot;_DB_NAME_LAYER_&quot;</span>,       <span class="hljs-comment">// database name</span>
+);
+
+<span class="hljs-keyword">await</span> db.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;profile&quot;</span>, { <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Ada&quot;</span> });
+<span class="hljs-keyword">const</span> profile = <span class="hljs-keyword">await</span> db.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;profile&quot;</span>);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">await</span> db.<span class="hljs-title function_">keys</span>());
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">await</span> db.<span class="hljs-title function_">count</span>());
+
+db.<span class="hljs-title function_">close</span>();
+</code></pre>
+<p>The default export instance is named <code>indexed_db</code>. Additional helpers include:</p>
+<ul>
+<li><code>getAllItems()</code>, <code>getAllKeys()</code>, <code>getAllValues()</code>, <code>count()</code></li>
+<li><code>createIndex()</code> and <code>deleteIndex()</code></li>
+<li><code>getByIndex()</code>, <code>getAllByIndex()</code>, <code>getKeysByIndex()</code></li>
+<li><code>iterateAll(callback)</code></li>
+<li><code>isOpen()</code> and <code>getDatabaseInfo()</code></li>
+</ul>
+<h3 id="ls"><code>ls</code></h3>
+<p><code>LS</code> uses browser <code>localStorage</code>:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">await</span> ls.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;settings&quot;</span>, { <span class="hljs-attr">notifications</span>: <span class="hljs-literal">true</span> });
+<span class="hljs-keyword">const</span> settings = ls.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;settings&quot;</span>);
+</code></pre>
+<p>Data survives page reloads and browser restarts unless removed by the application or browser.</p>
+<h3 id="session"><code>session</code></h3>
+<p><code>SESSION</code> uses browser <code>sessionStorage</code>:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">await</span> session.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;checkout-step&quot;</span>, <span class="hljs-number">2</span>);
+<span class="hljs-keyword">const</span> step = session.<span class="hljs-title function_">get</span>(<span class="hljs-string">&quot;checkout-step&quot;</span>);
+
+<span class="hljs-keyword">const</span> value = <span class="hljs-keyword">await</span> session.<span class="hljs-title function_">waitFor</span>(<span class="hljs-string">&quot;later-value&quot;</span>, <span class="hljs-number">10_000</span>);
+</code></pre>
+<p><code>session.clear()</code> preserves the root registry key (<code>ROOT_REG</code>) while clearing other session storage entries.</p>
+<h2 id="scoped-state">Scoped state</h2>
+<p>The module also exports a state API backed by nested maps on <code>globalThis</code>. State can be separated by root, master, and slave scope.</p>
+<pre><code class="language-ts"><span class="hljs-keyword">import</span> { state } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./state.js&quot;</span>;
+
+<span class="hljs-keyword">const</span> scope = {
+  <span class="hljs-attr">globalKey</span>: <span class="hljs-string">&quot;__ROOT_REG__&quot;</span>,
+  <span class="hljs-attr">ms_reg</span>: <span class="hljs-string">&quot;__MASTER_REG__&quot;</span>,
+  <span class="hljs-attr">sl_reg</span>: <span class="hljs-string">&quot;preferences&quot;</span>,
+};
+
+state.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;theme&quot;</span>, <span class="hljs-string">&quot;dark&quot;</span>, scope);
+<span class="hljs-keyword">const</span> theme = state.<span class="hljs-property">get</span>&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-string">&quot;theme&quot;</span>, scope);
+
+<span class="hljs-keyword">const</span> unsubscribe = state.<span class="hljs-title function_">subscribe</span>(<span class="hljs-string">&quot;theme&quot;</span>, <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;Theme changed:&quot;</span>, value);
+}, scope);
+
+state.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;theme&quot;</span>, <span class="hljs-string">&quot;light&quot;</span>, scope);
+<span class="hljs-title function_">unsubscribe</span>();
+</code></pre>
+<p>Scope fields are optional; the module defines defaults. Supply explicit identifiers when you need separate state areas.</p>
+<h3 id="state-methods">State methods</h3>
+<pre><code class="language-ts">state.<span class="hljs-title function_">get</span>(key, scope);
+state.<span class="hljs-title function_">set</span>(key, valueOrUpdater, { ...scope, <span class="hljs-attr">triggerRender</span>: <span class="hljs-literal">true</span> });
+state.<span class="hljs-title function_">delete</span>(key, scope);
+
+state.<span class="hljs-title function_">getByPrefix</span>(<span class="hljs-string">&quot;user:&quot;</span>, scope);
+state.<span class="hljs-title function_">getAll</span>(scope);
+
+state.<span class="hljs-title function_">subscribe</span>(key, callback, scope);
+state.<span class="hljs-title function_">subscribeAll</span>(<span class="hljs-function">(<span class="hljs-params">key, value</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(key, value);
+}, scope);
+
+state.<span class="hljs-title function_">batch</span>(<span class="hljs-string">&quot;count&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+  state.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;count&quot;</span>, <span class="hljs-number">1</span>, scope);
+  state.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;count&quot;</span>, <span class="hljs-number">2</span>, scope);
+}, scope);
+
+state.<span class="hljs-title function_">clear</span>(scope);
+</code></pre>
+<p><code>set()</code> accepts either a value or an updater function:</p>
+<pre><code class="language-ts">state.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;count&quot;</span>, <span class="hljs-function">(<span class="hljs-params">previous = <span class="hljs-number">0</span></span>) =&gt;</span> previous + <span class="hljs-number">1</span>, scope);
+</code></pre>
+<p>Use <code>triggerRender: false</code> to suppress key-level notifications from state writes.</p>
+<h3 id="persistence-markers">Persistence markers</h3>
+<p><code>state.persist(key)</code> marks a key for persistence within the state store’s persistence maps. It is not the same as writing to <code>localStorage</code> or another durable browser store.</p>
+<pre><code class="language-ts">state.<span class="hljs-title function_">persist</span>(<span class="hljs-string">&quot;theme&quot;</span>, scope);
+state.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;theme&quot;</span>, <span class="hljs-string">&quot;dark&quot;</span>, scope);
+
+state.<span class="hljs-title function_">unpersist</span>(<span class="hljs-string">&quot;theme&quot;</span>, scope);
+state.<span class="hljs-title function_">clearPersistent</span>(scope);
+</code></pre>
+<p>The store checks marked persistent values when reading a key whose regular state entry is missing.</p>
+<h3 id="convenience-functions">Convenience functions</h3>
+<p>The module also exports wrappers around the default state instance:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">import</span> {
+  get,
+  getAll,
+  publish,
+  set,
+  sub,
+  subAll,
+  del,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./state.js&quot;</span>;
+
+<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;status&quot;</span>, <span class="hljs-string">&quot;ready&quot;</span>);
+<span class="hljs-keyword">const</span> status = get&lt;<span class="hljs-built_in">string</span>&gt;(<span class="hljs-string">&quot;status&quot;</span>);
+<span class="hljs-keyword">const</span> unsubscribe = <span class="hljs-title function_">sub</span>(<span class="hljs-string">&quot;status&quot;</span>, <span class="hljs-variable language_">console</span>.<span class="hljs-property">log</span>);
+
+<span class="hljs-title function_">publish</span>(<span class="hljs-string">&quot;status&quot;</span>, <span class="hljs-string">&quot;updated&quot;</span>);
+<span class="hljs-title function_">del</span>(<span class="hljs-string">&quot;status&quot;</span>);
+<span class="hljs-title function_">unsubscribe</span>();
+</code></pre>
+<p>For explicit scope control, use <code>state</code> methods or the SSC helpers such as <code>setSSC()</code>, <code>getSSC()</code>, and <code>subSSC()</code>.</p>
+<h2 id="registries">Registries</h2>
+<p>Registries provide isolated in-memory key/value state with per-key and global subscriptions.</p>
+<pre><code class="language-ts"><span class="hljs-keyword">import</span> { createScopedReg, createRegistry } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./registries.js&quot;</span>;
+
+<span class="hljs-keyword">const</span> registry = <span class="hljs-title function_">createScopedReg</span>(<span class="hljs-string">&quot;editor&quot;</span>);
+
+registry.<span class="hljs-title function_">set</span>(<span class="hljs-string">&quot;document&quot;</span>, { <span class="hljs-attr">title</span>: <span class="hljs-string">&quot;Notes&quot;</span> });
+registry.<span class="hljs-title function_">subscribe</span>(<span class="hljs-string">&quot;document&quot;</span>, <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value));
+registry.<span class="hljs-title function_">subscribeAll</span>(<span class="hljs-function">(<span class="hljs-params">key, value</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(key, value));
+
+registry.<span class="hljs-title function_">delete</span>(<span class="hljs-string">&quot;document&quot;</span>);
+registry.<span class="hljs-title function_">clear</span>();
+</code></pre>
+<p><code>createScopedReg()</code> creates a new isolated registry each time. <code>createRegistry()</code> reuses a registry with the same name from a global registry table:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">const</span> first = <span class="hljs-title function_">createRegistry</span>(<span class="hljs-string">&quot;shared&quot;</span>);
+<span class="hljs-keyword">const</span> second = <span class="hljs-title function_">createRegistry</span>(<span class="hljs-string">&quot;shared&quot;</span>);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(first === second); <span class="hljs-comment">// true</span>
+</code></pre>
+<p>Registry methods include:</p>
+<ul>
+<li><code>get()</code> and <code>set()</code>; <code>set()</code> supports updater functions</li>
+<li><code>delete()</code></li>
+<li><code>getByPrefix()</code> and <code>getAll()</code></li>
+<li><code>subscribe()</code> and <code>subscribeAll()</code></li>
+<li><code>batch(key, callback)</code></li>
+<li><code>clear()</code> and <code>destroy()</code></li>
+</ul>
+<p><code>destroy()</code> removes a named registry from the global registry table. <code>createScopedReg().destroy()</code> clears that scoped registry.</p>
+<h2 id="ids">IDs</h2>
+<p><code>_bid</code> provides string IDs:</p>
+<pre><code class="language-ts"><span class="hljs-keyword">import</span> { _bid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./byte-id.js&quot;</span>;
+
+<span class="hljs-keyword">const</span> id = _bid.<span class="hljs-title function_">id</span>();
+</code></pre>
+<p>IDs have the form <code>&quot;epoch:counter&quot;</code>. <code>_sid()</code> is an alias for <code>id()</code>. The class also exposes <code>MAX_PENDING</code>, <code>sentTimestamps</code>, <code>pendingResolvers</code>, and <code>cursor</code> for pending-operation bookkeeping.</p>
+<h2 id="browser-and-runtime-notes">Browser and runtime notes</h2>
+<ul>
+<li>The storage adapters are browser-oriented. Most operations return early when <code>window</code> is unavailable.</li>
+<li><code>BroadcastChannel</code> is used when available to communicate changes between contexts. It is not a replacement for a durable storage layer.</li>
+<li>Some adapters use the Web Locks API when available to serialize writes.</li>
+<li>In non-browser runtimes, some methods return <code>null</code>, <code>undefined</code>, empty objects, or unresolved promises rather than performing storage operations.</li>
+<li><code>indexed_db</code> requires IndexedDB. Browser privacy settings or storage restrictions may cause operations to fail.</li>
+</ul>
+<h2 id="important-implementation-notes">Important implementation notes</h2>
+<p>Review these behaviors in the supplied code before relying on the module in production:</p>
+<ol>
+<li>
+<p><strong>TTL is disabled by default.</strong> The adapters initialize <code>ttl_active</code> to <code>false</code>. If enabled internally, the timer callbacks clear underlying data as well as memory in some adapters:</p>
+<ul>
+<li><code>LS.touchMemory()</code> calls <code>localStorage.clear()</code>.</li>
+<li><code>SESSION.touchMemory()</code> calls <code>sessionStorage.clear()</code>.</li>
+<li><code>COOKIE.touchMemory()</code> clears its in-memory cache, not browser cookies.</li>
+</ul>
+<p>This is destructive behavior, not just cache eviction.</p>
+</li>
+<li>
+<p><strong><code>CACHE</code> uses a separate notification/waiter map.</strong> Its <code>clear()</code> method clears both maps, but other adapters may keep waiters in their in-memory cache. Treat <code>clear()</code> as destructive and check each adapter’s implementation.</p>
+</li>
+<li>
+<p><strong><code>GT</code> has multiple internal maps.</strong> Its <code>clear()</code> method removes keys listed in <code>_GT_MEMORY</code> from <code>globalThis</code>; use it carefully, especially if global names may be shared.</p>
+</li>
+<li>
+<p><strong><code>LS.update()</code> uses <code>localStorage.update()</code>.</strong> The standard Web Storage API does not define this method. As written, this call will fail in standard browsers; consider changing it to <code>localStorage.setItem()</code>.</p>
+</li>
+<li>
+<p><strong><code>LS</code> cross-context messages update storage but do not emit subscribers.</strong> The <code>ls</code> BroadcastChannel handler does not call <code>_emit()</code> in the provided code, unlike several other adapters.</p>
+</li>
+<li>
+<p><strong>The BroadcastChannel self-message flag is shared per instance.</strong> Some adapters use <code>_localChange</code> to suppress handling a message. Test cross-tab behavior carefully, particularly when several adapter instances share the same channel name.</p>
+</li>
+<li>
+<p><strong><code>INDEXED_DB.createIndex()</code> and <code>deleteIndex()</code> open database version 2.</strong> The normal <code>open()</code> path requests version 1. IndexedDB version upgrades should be coordinated with a consistent schema/version strategy.</p>
+</li>
+<li>
+<p><strong><code>INDEXED_DB</code> methods require browser support.</strong> <code>keys()</code> and other database helpers do not all perform the same server-side guard as <code>get()</code> and <code>set()</code>.</p>
+</li>
+<li>
+<p><strong>Subscriptions are local to an adapter instance.</strong> Cross-context notifications only work where the corresponding BroadcastChannel handler updates or emits the relevant state.</p>
+</li>
+<li>
+<p><strong>Serialization is JSON-based.</strong> The custom serializer handles <code>Map</code> and <code>Set</code>, but does not preserve every JavaScript type. For example, functions, symbols, <code>BigInt</code>, cyclic objects, dates, and class instances need explicit handling before storage.</p>
+</li>
+<li>
+<p><strong><code>waitFor()</code> generally has no cancellation API.</strong> <code>SESSION.waitFor()</code> supports a timeout, but the other implementations can remain pending indefinitely if no value is set.</p>
+</li>
+</ol>
+<hr>
+<p><em>This README documents the supplied implementation. Verify the module’s export paths, TypeScript types, and runtime behavior against the final source before publishing.</em></p>
+
+            
+            
+        </body>
+        </html>

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" fill="none" width="24" height="24" class="icon icon-tabler icons-tabler-outline icon-tabler-ticket" strokelinejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path stroke="none" fill="none" d="M0 0h24v24H0z" />
+  <rect stroke="none" fill="none" width="29" height="29" x="-2.5" y="-2.5" />
+  <line x1="15.625" x2="15.625" y1="3.541667" y2="5.958333" />
+  <line x1="15.625" x2="15.625" y1="10.791667" y2="13.208333" />
+  <line x1="15.625" x2="15.625" y1="18.041667" y2="20.458333" />
+  <path d="M3.5417 3.5417l16.9166 0a2.4167 2.4167 0 0 1 2.4167 2.4167v3.625a2.4167 2.4167 0 0 0 0 4.8333v3.625a2.4167 2.4167 0 0 1-2.4167 2.4167l-16.9166 0a2.4167 2.4167 0 0 1-2.4167-2.4167v-3.625a2.4167 2.4167 0 0 0 0-4.8333v-3.625a2.4167 2.4167 0 0 1 2.4167-2.4167" />
+</svg>
