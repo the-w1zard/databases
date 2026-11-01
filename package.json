@@ -1,6 +1,6 @@
 {
   "name": "@the-w1zard/databases",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sideEffects": false,
   "type": "module",
   "main": "./dist/index.js",
@@ -22,6 +22,6 @@
     "typescript": "^6.0.0"
   },
   "dependencies": {
-      "@the-w1zard/alias_types": "workspace:*" 
-    }
+    "@the-w1zard/alias_types": "workspace:*"
+  }
 }
